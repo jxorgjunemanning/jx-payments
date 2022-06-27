@@ -7,7 +7,7 @@ class PaymentSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Payment
         fields = (
-          'id', 'deal_reference', 'currency_pair', 'buy_currency', 'sell_currency',
+          'id', 'currency_pair', 'buy_currency', 'sell_currency',
           'amount', 'client_id'
         )
 
